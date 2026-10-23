@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Eid · GIS & GeoAI</title>
+<title>Eid Shaban · GIS</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Portfolio of Eid, GIS specialist and analyst working on GeoAI, remote sensing and spatial analysis.">
+<meta name="description" content="Portfolio of Eid Shaban, GIS Data Quality Specialist in Riyadh with 6 years on national projects in Saudi Arabia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -66,7 +66,7 @@ html[lang="ar"] .label{letter-spacing:0;text-transform:none;font-family:var(--f-
 
 /* ---------- Nav ---------- */
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:10;background:var(--bg)}
-.nav{position:sticky;top:env(safe-area-inset-top, 0px);z-index:9;background:color-mix(in srgb, var(--bg) 82%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{position:sticky;top:env(safe-area-inset-top, 0px);z-index:9;background:color-mix(in srgb, var(--bg) 82%, transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;gap:20px;min-height:64px;padding-block:8px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--f-display);font-weight:700;font-size:19px}
 .brand-mark{width:30px;height:30px;flex:none}
@@ -107,16 +107,20 @@ html[lang="ar"] .role{font-family:var(--f-body);font-weight:500}
 .focus span{font-size:13px;color:var(--muted)}
 
 .idcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);max-width:420px;justify-self:end;width:100%}
-.idcard-photo{aspect-ratio:4/3.4;max-width:100%;position:relative;background:
+.idcard-top{position:relative;display:grid;justify-items:center;gap:12px;padding:48px 16px 16px;background:
   repeating-linear-gradient(0deg, transparent 0 27px, var(--line) 27px 28px),
-  repeating-linear-gradient(90deg, transparent 0 27px, var(--line) 27px 28px), var(--surface-2);display:grid;place-items:center}
-.idcard-photo .initials{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;background:var(--bg);border:2px dashed var(--accent);font-family:var(--f-display);font-size:48px;font-weight:800;color:var(--accent)}
-.idcard-photo .ph{position:absolute;bottom:10px;inset-inline-start:12px;font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+  repeating-linear-gradient(90deg, transparent 0 27px, var(--line) 27px 28px), var(--surface-2)}
+.avatar{position:relative;width:min(320px,88%);aspect-ratio:1;max-width:100%;border-radius:50%;padding:7px}
+.idcard-photo{width:100%;height:100%;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:var(--bg);border:1px solid var(--line);box-shadow:0 18px 40px -20px rgba(0,0,0,.55)}
+.idcard-photo img{width:100%;height:100%;object-fit:cover}
+.idcard-photo .initials{font-family:var(--f-display);font-size:clamp(56px,8vw,88px);font-weight:800;color:var(--accent);letter-spacing:-.02em}
+.idcard-top .ph{font-family:var(--f-mono);font-size:11px;color:var(--muted)}
+html[lang="ar"] .idcard-top .ph{font-family:var(--f-body)}
 .pin{position:absolute;top:14px;inset-inline-end:14px;font-family:var(--f-mono);font-size:11px;background:var(--bg);border:1px solid var(--line);padding:4px 8px;border-radius:6px;color:var(--fg)}
 .idcard-body{padding:16px 18px;display:grid;gap:10px}
 .idcard-row{display:flex;justify-content:space-between;gap:12px;font-size:14px}
 .idcard-row span:first-child{color:var(--muted)}
-.idcard-row b{font-weight:600;text-align:end}
+.idcard-row b{font-weight:600;text-align:end;max-width:68%}
 .verified{display:inline-flex;align-items:center;gap:6px;color:var(--ok);font-size:13px;font-weight:600}
 
 .hud{position:relative;z-index:1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:0 18px;font-size:12px;color:var(--muted)}
@@ -195,7 +199,32 @@ html[dir="rtl"] .bar i{background:linear-gradient(270deg,var(--water),var(--acce
 @media (max-width: 980px){ .sheets{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width: 620px){ .sheets{grid-template-columns:minmax(0,1fr)} }
 
+/* Tools vault */
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:28px}
+.flow > div{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px dashed var(--line);border-radius:var(--r)}
+.flow .n{flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2);color:var(--accent);font-family:var(--f-mono);font-size:13px;font-weight:600}
+.flow b{display:block;font-size:15px}
+.flow span{font-size:13px;color:var(--muted)}
+.tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.tool{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);transition:border-color .2s}
+.tool:hover{border-color:var(--accent)}
+.tool-icon{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--line);font-family:var(--f-mono);font-size:12px;font-weight:600;color:var(--water)}
+.tool-body{display:flex;flex-direction:column;gap:10px;min-width:0}
+.tool-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tool-head h3{font-size:19px;line-height:1.25}
+.access{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;border:1px solid currentColor}
+.access.req{color:var(--accent)}
+.access.free{color:var(--ok)}
+.tool p{color:var(--muted);font-size:14.5px}
+.tool-meta{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted)}
+.tool-meta b{color:var(--fg);font-weight:500}
+.tool-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+@media (max-width: 900px){ .tools-grid{grid-template-columns:minmax(0,1fr)} }
+@media (max-width: 680px){ .flow{grid-template-columns:minmax(0,1fr)} }
+
 /* Experience timeline */
+.courses{margin-top:24px;max-width:860px}
+.courses .tools{border-top:0;margin-top:12px;padding-top:0}
 .timeline{display:grid;gap:0;max-width:860px}
 .tl{display:grid;grid-template-columns:150px 24px minmax(0,1fr);gap:16px}
 .tl .when{font-size:13px;color:var(--muted);padding-top:3px;text-align:end}
@@ -244,6 +273,27 @@ footer nav{display:flex;flex-wrap:wrap;gap:6px 14px}
 footer a{text-decoration:none}
 footer a:hover{color:var(--fg)}
 
+/* Request dialog */
+.req-dialog{border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--fg);padding:0;width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 32px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.req-dialog::backdrop{background:rgba(5,10,12,.6);backdrop-filter:blur(3px)}
+.req-dialog[open]{animation:rise .35s cubic-bezier(.2,.8,.2,1)}
+.req-form{display:grid;gap:14px;padding:24px}
+.req-form h3{font-size:22px}
+.req-form .sub{color:var(--muted);font-size:14px;margin-top:-6px}
+.req-tool{font-family:var(--f-mono);font-size:13px;color:var(--accent);background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.field{display:grid;gap:6px}
+.field label{font-size:13px;color:var(--muted)}
+.field input,.field textarea,.field select{font:inherit;font-size:15px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px 12px;width:100%}
+.field textarea{min-height:84px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.req-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;margin-top:4px}
+.req-msg{font-size:14px;padding:10px 12px;border-radius:8px;background:var(--surface-2)}
+.req-msg.ok{color:var(--ok)}
+.req-msg.err{color:var(--accent)}
+.hp{position:absolute;left:-9999px}
+@media (max-width: 520px){ .row2{grid-template-columns:minmax(0,1fr)} }
+
 .toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom, 0px));left:50%;transform:translateX(-50%) translateY(20px);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:20}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
@@ -272,8 +322,12 @@ html[dir="rtl"] .progress{transform-origin:100% 50%}
 @keyframes swap{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
 .idcard-photo .initials{animation:float 6s ease-in-out infinite}
 @keyframes float{50%{transform:translateY(-8px)}}
-.idcard-photo::after{content:"";position:absolute;left:0;right:0;height:40%;top:-40%;background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--water) 22%,transparent));animation:scan 4.5s linear infinite;pointer-events:none}
-@keyframes scan{to{top:100%}}
+@property --ring{syntax:"<angle>";inherits:false;initial-value:0deg}
+.avatar::before{content:"";position:absolute;inset:0;z-index:3;border-radius:50%;padding:3px;pointer-events:none;
+  background:conic-gradient(from var(--ring), transparent 0 72%, color-mix(in srgb,var(--water) 70%,transparent) 84%, var(--accent) 94%, transparent 100%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  animation:ring 5s linear infinite}
+@keyframes ring{from{--ring:360deg}to{--ring:0deg}}
 .idcard-photo{overflow:hidden}
 .marquee{overflow:hidden;border-bottom:1px solid var(--line);padding-block:18px;background:var(--surface);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
 .marquee-track{display:flex;gap:48px;width:max-content;animation:marq 40s linear infinite;font-family:var(--f-display);font-size:22px;font-weight:600;color:var(--muted)}
@@ -296,12 +350,13 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Home">
       <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="var(--accent)" stroke-width="2"/><path d="M16 4 L19.5 16 L16 13.5 L12.5 16 Z" fill="var(--accent)"/><path d="M5 20c5-3 9 2 14-1s6-2 8-1" fill="none" stroke="var(--water)" stroke-width="1.6"/></svg>
-      <span><span data-i18n="name">Eid</span><small data-i18n="brandRole">GIS · GeoAI</small></span>
+      <span><span data-i18n="name">Eid Shaban</span><small data-i18n="brandRole">GIS · GeoAI</small></span>
     </a>
     <nav class="nav-links" aria-label="Sections">
       <a href="#about" data-i18n="navAbout">About</a>
       <a href="#skills" data-i18n="navSkills">Skills</a>
       <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#tools" data-i18n="navTools">Tools</a>
       <a href="#experience" data-i18n="navExperience">Experience</a>
     </nav>
     <div class="nav-actions">
@@ -317,7 +372,7 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
     <div class="wrap">
       <div>
         <span class="status" data-in style="--i:0"><span class="dot"></span><span data-i18n="status">Available for GIS &amp; GeoAI projects</span></span>
-        <h1 id="heroTitle" data-in style="--i:1"><span data-i18n="hi">Hi, I'm</span> <span class="hl" data-i18n="name">Eid</span>.<br><span data-i18n="heroLine">I turn spatial data into decisions.</span></h1>
+        <h1 id="heroTitle" data-in style="--i:1"><span data-i18n="hi">Hi, I'm</span> <span class="hl" data-i18n="name">Eid Shaban</span>.<br><span data-i18n="heroLine">I turn spatial data into decisions.</span></h1>
         <div class="role" aria-live="polite" data-in style="--i:2"><span id="roleText"></span><span class="caret">&nbsp;</span></div>
         <p class="tagline" data-in style="--i:3" data-i18n="tagline">GIS specialist and analyst working where geography meets machine learning: mapping change from satellite imagery, modelling risk, and building tools that make location data useful.</p>
         <div class="cta" data-in style="--i:4">
@@ -331,23 +386,22 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
         </div>
       </div>
       <aside class="idcard tilt" aria-label="Profile card" data-in style="--i:3">
-        <div class="idcard-photo">
-          <span class="pin mono" id="pinCoords" dir="ltr">30.0444° N, 31.2357° E</span>
-          <div class="initials" aria-hidden="true">E</div>
+        <div class="idcard-top">
+          <span class="pin mono" id="pinCoords" dir="ltr">24.7136° N, 46.6753° E</span>
+          <div class="avatar"><div class="idcard-photo"><div class="initials" aria-hidden="true">ES</div></div></div>
           <span class="ph" data-i18n="photoPh">Your photo goes here</span>
         </div>
         <div class="idcard-body">
           <div class="idcard-row"><span data-i18n="cardRole">Role</span><b data-i18n="cardRoleV">GIS Specialist &amp; Analyst</b></div>
-          <div class="idcard-row"><span data-i18n="cardBase">Based in</span><b data-i18n="cardBaseV">Cairo, Egypt</b></div>
-          <div class="idcard-row"><span data-i18n="cardCrs">Working CRS</span><b class="mono">EPSG:4326 · 32636</b></div>
+          <div class="idcard-row"><span data-i18n="cardBase">Based in</span><b data-i18n="cardBaseV">Riyadh, Saudi Arabia</b></div>
           <span class="verified"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="verified">Esri &amp; GEE certified (placeholder)</span></span>
         </div>
       </aside>
     </div>
     <div class="wrap hud mono" aria-hidden="true" dir="ltr">
-      <span id="cursorCoords">LAT 30.0444 · LON 31.2357</span>
+      <span id="cursorCoords">LAT 24.7136 · LON 46.6753</span>
       <span class="scalebar"><i></i>0 — 5 km</span>
-      <span>SHEET NH-36 · 1:50 000</span>
+      <span>SHEET NG-38 · 1:50 000</span>
     </div>
   </section>
 
@@ -359,14 +413,14 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
       <div class="about">
         <div>
           <p class="statement" data-i18n-html="aboutStatement">Every dataset has a location. I find the <em>pattern in the place</em> and use AI to see it faster, at larger scales, and with fewer blind spots.</p>
-          <p class="body" data-i18n="aboutBody">I work across the full GIS pipeline: collecting and cleaning spatial data, running analysis in ArcGIS Pro and QGIS, processing satellite imagery, and training models that classify land cover or extract features automatically. I care about maps that are accurate, honest about uncertainty, and easy for decision makers to read.</p>
+          <p class="body" data-i18n="aboutBody">I have 6 years of experience. I work across the full GIS pipeline: collecting and cleaning spatial data, running analysis in ArcGIS Pro and QGIS, processing satellite imagery, and training models that classify land cover or extract features automatically. I care about maps that are accurate, honest about uncertainty, and easy for decision makers to read.</p>
         </div>
         <div class="facts">
-          <div><span data-i18n="fact1">Experience</span><b class="mono" data-i18n="fact1v">5+ years</b></div>
+          <div><span data-i18n="fact1">Experience</span><b class="mono" data-i18n="fact1v">6+ years</b></div>
           <div><span data-i18n="fact2">Focus</span><b data-i18n="fact2v">GeoAI · Remote sensing</b></div>
           <div><span data-i18n="fact3">Education</span><b data-i18n="fact3v">B.Sc. Geography &amp; GIS</b></div>
           <div><span data-i18n="fact4">Languages</span><b data-i18n="fact4v">Arabic, English</b></div>
-          <div><span data-i18n="fact5">Maps delivered</span><b class="mono" data-count="120" data-suffix="+">120+</b></div>
+          <div><span data-i18n="fact5">Maps delivered</span><b class="mono" data-count="11">11</b></div>
         </div>
       </div>
     </div>
@@ -390,7 +444,19 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
         <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
       </div>
       <div class="sheets" id="sheets"></div>
-      <p class="sample-note" data-i18n="sampleNote">Sample projects shown as placeholders. Replace them with your real work.</p>
+          </div>
+  </section>
+
+  <section class="block" id="tools" aria-labelledby="toolsTitle">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="label" data-i18n="toolsKicker">Tools</span><h2 id="toolsTitle" data-i18n="toolsTitle">Tools I've built</h2></div><p data-i18n="toolsLead">Scripts, toolboxes and add-ins I developed to speed up GIS production and quality control.</p></div>
+      <div class="flow">
+        <div><span class="n">1</span><div><b data-i18n="flow1">Request</b><span data-i18n="flow1d">Press "Request download" and sign in with Google.</span></div></div>
+        <div><span class="n">2</span><div><b data-i18n="flow2">I review</b><span data-i18n="flow2d">I get your request by email and approve it.</span></div></div>
+        <div><span class="n">3</span><div><b data-i18n="flow3">Download</b><span data-i18n="flow3d">You get an email with access to the file.</span></div></div>
+      </div>
+      <div class="tools-grid" id="toolsGrid"></div>
+      <p class="sample-note" data-i18n="toolsNote">Sample tools shown as placeholders. Replace them with your real tools.</p>
     </div>
   </section>
 
@@ -398,6 +464,7 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
     <div class="wrap">
       <div class="sec-head"><div><span class="label" data-i18n="expKicker">Experience</span><h2 id="expTitle" data-i18n="expTitle">Survey log</h2></div></div>
       <div class="timeline" id="timeline"></div>
+      <div class="courses"><span class="label" data-i18n="coursesTitle">Courses</span><div class="tools" id="courses"></div></div>
     </div>
   </section>
 
@@ -408,7 +475,7 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
         <h2 id="contactTitle" style="margin-top:18px" data-i18n="contactTitle">Have a spatial problem? Let's map it.</h2>
         <p class="lead" data-i18n="contactLead">Tell me about the area, the data you have, and the decision you need to make. I'll reply with how I'd approach it.</p>
         <div class="email-box">
-          <span class="mono" id="emailText" dir="ltr">eid@example.com</span>
+          <span class="mono" id="emailText" dir="ltr">eidshaban231@gmail.com</span>
           <button class="btn btn-sm btn-primary" type="button" id="copyEmail" data-i18n="copy">Copy email</button>
         </div>
         <div class="stats">
@@ -424,7 +491,7 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
 
 <footer>
   <div class="wrap">
-    <span>© <span id="year"></span> <span data-i18n="name">Eid</span> · <span data-i18n="footerRole">GIS Specialist &amp; Analyst</span></span>
+    <span>© <span id="year"></span> <span data-i18n="name">Eid Shaban</span> · <span data-i18n="footerRole">GIS Specialist &amp; Analyst</span></span>
     <nav aria-label="Footer">
       <a href="#about" data-i18n="navAbout">About</a>
       <a href="#skills" data-i18n="navSkills">Skills</a>
@@ -434,109 +501,175 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
     </nav>
   </div>
 </footer>
+<dialog class="req-dialog" id="reqDialog" aria-labelledby="reqTitle">
+  <form class="req-form" id="reqForm" novalidate>
+    <h3 id="reqTitle" data-i18n="reqTitle">Request download</h3>
+    <p class="sub" data-i18n="reqSub">Tell me who you are and how you'll use the tool. I'll review it and send you access by email.</p>
+    <div class="req-tool" id="reqTool"></div>
+    <div class="row2">
+      <div class="field"><label for="rqName" data-i18n="rqName">Full name</label><input id="rqName" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="rqEmail" data-i18n="rqEmail">Email (Gmail preferred)</label><input id="rqEmail" name="email" type="email" required autocomplete="email" dir="ltr"></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="rqOrg" data-i18n="rqOrg">Organisation</label><input id="rqOrg" name="organisation" autocomplete="organization"></div>
+      <div class="field"><label for="rqPhone" data-i18n="rqPhone">Phone / WhatsApp</label><input id="rqPhone" name="phone" type="tel" autocomplete="tel" dir="ltr"></div>
+    </div>
+    <div class="field"><label for="rqUse" data-i18n="rqUse">What will you use it for?</label><textarea id="rqUse" name="purpose" required></textarea></div>
+    <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <p class="req-msg" id="reqMsg" hidden></p>
+    <div class="req-actions">
+      <button class="btn btn-sm" type="button" id="reqCancel" data-i18n="rqCancel">Cancel</button>
+      <button class="btn btn-sm btn-primary" type="submit" id="reqSend" data-i18n="rqSend">Send request</button>
+    </div>
+  </form>
+</dialog>
 <div class="toast" id="toast" role="status"></div>
 
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
 /* ================= Content (edit here) ================= */
 const T = {
   en:{
-    name:"Eid", brandRole:"GIS · GeoAI", navAbout:"About", navSkills:"Skills", navProjects:"Projects", navExperience:"Experience", navContact:"Get in touch",
-    status:"Available for GIS & GeoAI projects", hi:"Hi, I'm", heroLine:"I turn spatial data into decisions.",
-    tagline:"GIS specialist and analyst working where geography meets machine learning: mapping change from satellite imagery, modelling risk, and building tools that make location data useful.",
+    name:"Eid Shaban", brandRole:"GIS · Data QC", navAbout:"About", navSkills:"Skills", navProjects:"Projects", navExperience:"Experience", navTools:"Tools", navContact:"Get in touch",
+    toolsKicker:"Tools", toolsTitle:"Tools I've built", toolsLead:"Scripts, toolboxes and add-ins I developed to speed up GIS production and quality control.",
+    flow1:"Request", flow1d:"Press \"Request download\" and fill in the short form.", flow2:"I review", flow2d:"Your request reaches me by email and I approve it.", flow3:"Download", flow3d:"You get an email with access to the file.",
+    reqTitle:"Request download", reqSub:"Tell me who you are and how you'll use the tool. I'll review it and send you access by email.", rqName:"Full name", rqEmail:"Email (Gmail preferred)", rqOrg:"Organisation", rqPhone:"Phone / WhatsApp", rqUse:"What will you use it for?", rqCancel:"Cancel", rqSend:"Send request", rqSending:"Sending…", rqOk:"Request sent. I'll reply to your email once it's reviewed.", rqErr:"The request could not be sent. Check your connection and try again, or email me directly.", rqMissing:"Fill in your name, a valid email and what you'll use it for.", rqNoKey:"Requests aren't switched on yet. Please email me directly for now.",
+    toolsNote:"Sample tools shown as placeholders. Replace them with your real tools.", reqBtn:"Request download", soonBtn:"Link coming soon", freeBtn:"Download", detailsBtn:"Details", onRequest:"On request", freeLbl:"Free", lblWorks:"Works with", lblVer:"Version", lblUpd:"Updated",
+    status:"Available for GIS data QC & Enterprise GIS work", hi:"Hi, I'm", heroLine:"I make spatial data you can trust.",
+    tagline:"GIS Data Quality Specialist with 6 years on national-scale projects in Saudi Arabia for PIF, SAR, MODON, MEWA and the Royal Commission for Riyadh City, from survey data and geodatabases to validated, publish-ready GIS.",
     ctaWork:"View my work", ctaCv:"Request my CV",
-    f1:"Spatial analysis", f1d:"ArcGIS Pro, QGIS, PostGIS", f2:"Remote sensing", f2d:"Sentinel, Landsat, GEE", f3:"GeoAI", f3d:"Deep learning on imagery",
-    photoPh:"Your photo goes here", cardRole:"Role", cardRoleV:"GIS Specialist & Analyst", cardBase:"Based in", cardBaseV:"Cairo, Egypt", cardCrs:"Working CRS", verified:"Esri & GEE certified (placeholder)",
+    f1:"GIS QC & validation", f1d:"Topology, Attribute Rules, Data Reviewer", f2:"Enterprise GIS", f2d:"Geodatabases, ArcGIS Online admin", f3:"Survey to GIS", f3d:"Point cloud, GPS, GPR, FME",
+    photoPh:"Your photo goes here", cardRole:"Role", cardRoleV:"GIS Specialist / GIS Data QC Specialist / GIS Analyst", cardBase:"Based in", cardBaseV:"Riyadh, Saudi Arabia", cardCrs:"Working CRS", verified:"Works to Saudi Geospatial Authority standards",
     aboutKicker:"About", aboutTitle:"Where, why, and what next",
-    aboutStatement:"Every dataset has a location. I find the <em>pattern in the place</em> and use AI to see it faster, at larger scales, and with fewer blind spots.",
-    aboutBody:"I work across the full GIS pipeline: collecting and cleaning spatial data, running analysis in ArcGIS Pro and QGIS, processing satellite imagery, and training models that classify land cover or extract features automatically. I care about maps that are accurate, honest about uncertainty, and easy for decision makers to read.",
-    fact1:"Experience", fact1v:"5+ years", fact2:"Focus", fact2v:"GeoAI · Remote sensing", fact3:"Education", fact3v:"B.Sc. Geography & GIS", fact4:"Languages", fact4v:"Arabic, English", fact5:"Maps delivered",
-    skillsKicker:"Skills", skillsTitle:"The layer stack", skillsLead:"Toggle a layer to see the tools and methods I use in that part of the work.", layersLabel:"Layers", toolsLabel:"Tools",
-    projectsKicker:"Projects", projectsTitle:"Selected map sheets", all:"All", sampleNote:"Sample projects shown as placeholders. Replace them with your real work.",
-    expKicker:"Experience", expTitle:"Survey log",
-    contactStatus:"Open to full-time roles and freelance", contactTitle:"Have a spatial problem? Let's map it.",
-    contactLead:"Tell me about the area, the data you have, and the decision you need to make. I'll reply with how I'd approach it.",
+    aboutStatement:"Every map is only as good as the data under it. I make sure <em>the data matches the ground</em> before anyone builds a decision on it.",
+    aboutBody:"I have 6 years of experience executing and managing diverse GIS projects, including mega projects, property ownership studies, urban planning and infrastructure. I build web-based GIS applications and keep expanding my expertise in GIS QC standards, Enterprise GIS and data analysis. I also have a strong understanding of the Saudi Geospatial Authority's (GEOSA) requirements for data validation, management and publication.",
+    fact1:"Experience", fact1v:"6+ years", fact2:"Focus", fact2v:"GIS Data QC · Enterprise GIS", fact3:"Current role", fact3v:"Alqotr Engineering Consulting", fact4:"Languages", fact4v:"Arabic, English", fact5:"National projects",
+    skillsKicker:"Skills", skillsTitle:"The layer stack", skillsLead:"Pick a layer to see the tools and methods I use in that part of the work. Levels are self-assessed.", layersLabel:"Layers", toolsLabel:"Tools", coursesTitle:"Courses",
+    projectsKicker:"Projects", projectsTitle:"National projects", all:"All", sampleNote:"Sample projects shown as placeholders. Replace them with your real work.",
+    expKicker:"Experience", expTitle:"Work history",
+    contactStatus:"Open to GIS QC and Enterprise GIS roles", contactTitle:"Need GIS data you can rely on? Let's talk.",
+    contactLead:"Tell me about the project, the data you have and the standard it has to meet. I'll reply with how I'd approach it.",
     copy:"Copy email", copied:"Email copied", copyFail:"Select the address to copy it", st1:"Reply time", st2v:"Remote", st2:"or on site", st3:"Deliverables",
-    footerRole:"GIS Specialist & Analyst", backTop:"Back to top ↑",
-    roles:["GIS Specialist","Spatial Data Analyst","Remote Sensing Analyst","GeoAI Enthusiast"]
+    footerRole:"GIS Data QC Specialist", backTop:"Back to top ↑",
+    roles:["GIS Data QC Specialist", "Enterprise GIS", "Mobile Mapping Specialist", "Web GIS & Dashboards", "GeoAI Enthusiast"]
   },
   ar:{
-    name:"عيد", brandRole:"نظم معلومات جغرافية · GeoAI", navAbout:"نبذة", navSkills:"المهارات", navProjects:"المشاريع", navExperience:"الخبرات", navContact:"تواصل معي",
-    status:"متاح لمشاريع GIS والذكاء الاصطناعي الجغرافي", hi:"أهلاً، أنا", heroLine:"أحوّل البيانات المكانية إلى قرارات.",
-    tagline:"أخصائي ومحلل نظم معلومات جغرافية أعمل حيث تلتقي الجغرافيا بتعلّم الآلة: رصد التغيّر من صور الأقمار الصناعية، ونمذجة المخاطر، وبناء أدوات تجعل البيانات المكانية مفيدة.",
+    name:"عيد شعبان", brandRole:"GIS · ضبط جودة البيانات", navAbout:"نبذة", navSkills:"المهارات", navProjects:"المشاريع", navExperience:"الخبرات", navTools:"أدواتي", navContact:"تواصل معي",
+    toolsKicker:"أدواتي", toolsTitle:"أدوات طوّرتها", toolsLead:"سكربتات وأدوات وإضافات طوّرتها لتسريع إنتاج بيانات GIS وضبط جودتها.",
+    flow1:"اطلب", flow1d:"اضغط \"اطلب التحميل\" واملأ النموذج القصير.", flow2:"أراجع الطلب", flow2d:"يصلني طلبك على الإيميل وأوافق عليه.",
+    reqTitle:"طلب تحميل", reqSub:"عرّفني بنفسك وبطريقة استخدامك للأداة، وسأراجع الطلب وأرسل لك صلاحية التحميل على الإيميل.", rqName:"الاسم بالكامل", rqEmail:"الإيميل (يفضّل Gmail)", rqOrg:"الجهة", rqPhone:"الجوال / واتساب", rqUse:"ستستخدم الأداة في إيه؟", rqCancel:"إلغاء", rqSend:"إرسال الطلب", rqSending:"جاري الإرسال…", rqOk:"تم إرسال طلبك. سأرد على إيميلك بعد المراجعة.", rqErr:"تعذّر إرسال الطلب. تأكد من الاتصال وحاول مرة أخرى، أو راسلني على الإيميل مباشرة.", rqMissing:"اكتب اسمك وإيميل صحيح والغرض من الاستخدام.", rqNoKey:"استقبال الطلبات لم يُفعّل بعد. راسلني على الإيميل مباشرة حالياً.", flow3:"حمّل", flow3d:"يصلك إيميل بصلاحية الوصول للملف.",
+    toolsNote:"الأدوات المعروضة أمثلة مؤقتة، استبدلها بأدواتك الحقيقية.", reqBtn:"اطلب التحميل", soonBtn:"اللينك قريباً", freeBtn:"تحميل", detailsBtn:"التفاصيل", onRequest:"بطلب", freeLbl:"مجاني", lblWorks:"يعمل مع", lblVer:"الإصدار", lblUpd:"آخر تحديث",
+    status:"متاح لأعمال ضبط جودة بيانات GIS و Enterprise GIS", hi:"أهلاً، أنا", heroLine:"أقدّم بيانات مكانية يمكن الوثوق بها.",
+    tagline:"أخصائي ضبط جودة بيانات GIS بخبرة 6 سنوات في مشروعات وطنية كبرى بالمملكة لصالح صندوق الاستثمارات العامة والخطوط الحديدية السعودية ومدن والبيئة والمياه والزراعة والهيئة الملكية لمدينة الرياض، من بيانات المساحة وقواعد البيانات الجغرافية حتى بيانات مدقّقة وجاهزة للنشر.",
     ctaWork:"شاهد أعمالي", ctaCv:"اطلب سيرتي الذاتية",
-    f1:"التحليل المكاني", f1d:"ArcGIS Pro و QGIS و PostGIS", f2:"الاستشعار عن بعد", f2d:"Sentinel و Landsat و GEE", f3:"GeoAI", f3d:"التعلّم العميق على الصور",
-    photoPh:"ضع صورتك هنا", cardRole:"الوظيفة", cardRoleV:"أخصائي ومحلل GIS", cardBase:"المقر", cardBaseV:"القاهرة، مصر", cardCrs:"نظام الإحداثيات", verified:"شهادات Esri و GEE (مثال)",
+    f1:"ضبط الجودة والتحقق", f1d:"Topology و Attribute Rules و Data Reviewer", f2:"Enterprise GIS", f2d:"قواعد بيانات جغرافية وإدارة ArcGIS Online", f3:"من المساحة إلى GIS", f3d:"Point cloud و GPS و GPR و FME",
+    photoPh:"ضع صورتك هنا", cardRole:"الوظيفة", cardRoleV:"أخصائي GIS / أخصائي ضبط جودة بيانات GIS / محلل GIS", cardBase:"المقر", cardBaseV:"الرياض، السعودية", cardCrs:"نظام الإحداثيات", verified:"ملتزم بمعايير الهيئة العامة للمساحة والمعلومات الجيومكانية",
     aboutKicker:"نبذة", aboutTitle:"أين، ولماذا، وماذا بعد",
-    aboutStatement:"لكل بيانات موقع. أبحث عن <em>النمط داخل المكان</em> وأستخدم الذكاء الاصطناعي لرؤيته أسرع، وعلى نطاق أوسع، وبنقاط عمياء أقل.",
-    aboutBody:"أعمل على مسار GIS كاملاً: جمع البيانات المكانية وتنظيفها، والتحليل في ArcGIS Pro و QGIS، ومعالجة صور الأقمار الصناعية، وتدريب نماذج تصنّف استخدامات الأراضي أو تستخرج المعالم تلقائياً. يهمني أن تكون الخريطة دقيقة، وصادقة في عرض نسبة الخطأ، وسهلة القراءة لصاحب القرار.",
-    fact1:"الخبرة", fact1v:"+5 سنوات", fact2:"التركيز", fact2v:"GeoAI · استشعار عن بعد", fact3:"التعليم", fact3v:"بكالوريوس جغرافيا ونظم معلومات", fact4:"اللغات", fact4v:"العربية، الإنجليزية", fact5:"خرائط منفّذة",
-    skillsKicker:"المهارات", skillsTitle:"طبقات المهارات", skillsLead:"اختر طبقة لترى الأدوات والأساليب التي أستخدمها في هذا الجزء من العمل.", layersLabel:"الطبقات", toolsLabel:"الأدوات",
-    projectsKicker:"المشاريع", projectsTitle:"لوحات خرائط مختارة", all:"الكل", sampleNote:"المشاريع المعروضة أمثلة مؤقتة، استبدلها بأعمالك الحقيقية.",
-    expKicker:"الخبرات", expTitle:"سجل الرحلة المهنية",
-    contactStatus:"متاح لوظيفة بدوام كامل أو عمل حر", contactTitle:"عندك مشكلة مكانية؟ خلّينا نرسم لها خريطة.",
-    contactLead:"احكِ لي عن المنطقة، والبيانات المتاحة، والقرار المطلوب. سأرد عليك بطريقة التنفيذ التي أقترحها.",
+    aboutStatement:"قيمة أي خريطة من قيمة البيانات اللي تحتها. أتأكد إن <em>البيانات مطابقة للواقع</em> قبل ما يُبنى عليها أي قرار.",
+    aboutBody:"لدي خبرة 6 سنوات في تنفيذ وإدارة مشروعات GIS متنوعة، منها المشروعات الكبرى ودراسات الملكيات العقارية والتخطيط العمراني والبنية التحتية. أطوّر تطبيقات GIS على الويب، وأعمل باستمرار على تطوير خبرتي في معايير ضبط جودة البيانات الجغرافية (GIS QC) و Enterprise GIS وتحليل البيانات. ولدي فهم قوي لاشتراطات الهيئة العامة للمساحة والمعلومات الجيومكانية في التحقق من البيانات وإدارتها ونشرها.",
+    fact1:"الخبرة", fact1v:"+6 سنوات", fact2:"التركيز", fact2v:"ضبط جودة البيانات · Enterprise GIS", fact3:"الوظيفة الحالية", fact3v:"شركة القطر للاستشارات الهندسية", fact4:"اللغات", fact4v:"العربية، الإنجليزية", fact5:"مشروعات وطنية",
+    skillsKicker:"المهارات", skillsTitle:"طبقات المهارات", skillsLead:"اختر طبقة لترى الأدوات والأساليب التي أستخدمها في هذا الجزء من العمل. المستويات تقييم ذاتي.", layersLabel:"الطبقات", toolsLabel:"الأدوات", coursesTitle:"الدورات التدريبية",
+    projectsKicker:"المشاريع", projectsTitle:"مشروعات وطنية", all:"الكل", sampleNote:"المشاريع المعروضة أمثلة مؤقتة، استبدلها بأعمالك الحقيقية.",
+    expKicker:"الخبرات", expTitle:"الخبرات العملية",
+    contactStatus:"متاح لوظائف ضبط جودة GIS و Enterprise GIS", contactTitle:"محتاج بيانات GIS تقدر تعتمد عليها؟ خلّينا نتكلم.",
+    contactLead:"احكِ لي عن المشروع، والبيانات المتاحة، والمعيار المطلوب الالتزام به. سأرد عليك بطريقة التنفيذ التي أقترحها.",
     copy:"انسخ الإيميل", copied:"تم نسخ الإيميل", copyFail:"حدّد العنوان لنسخه", st1:"وقت الرد", st2v:"عن بعد", st2:"أو في الموقع", st3:"لغة التسليم",
-    footerRole:"أخصائي ومحلل نظم معلومات جغرافية", backTop:"العودة للأعلى ↑",
-    roles:["أخصائي نظم معلومات جغرافية","محلل بيانات مكانية","محلل استشعار عن بعد","مهتم بالذكاء الاصطناعي الجغرافي"]
+    footerRole:"أخصائي ضبط جودة بيانات GIS", backTop:"العودة للأعلى ↑",
+    roles:["أخصائي ضبط جودة بيانات GIS", "Enterprise GIS", "أخصائي المسح المتنقل", "Web GIS ولوحات المؤشرات", "مهتم بالذكاء الاصطناعي الجغرافي"]
   }
 };
 
 const SKILLS = [
-  { id:"gis", color:"var(--accent)", name:{en:"GIS & spatial analysis",ar:"GIS والتحليل المكاني"},
-    items:[["ArcGIS Pro / ArcMap",92],["QGIS",88],{en:"Spatial statistics",ar:"الإحصاء المكاني",v:80},{en:"Geodatabase design",ar:"تصميم قواعد البيانات الجغرافية",v:85},{en:"Network analysis",ar:"تحليل الشبكات",v:75},{en:"Cartography",ar:"الإخراج الكارتوجرافي",v:90}],
-    tools:["ArcGIS Pro","QGIS","ModelBuilder","PostGIS","ArcGIS Online"] },
-  { id:"rs", color:"var(--water)", name:{en:"Remote sensing",ar:"الاستشعار عن بعد"},
-    items:[{en:"Image classification",ar:"تصنيف المرئيات",v:86},["Google Earth Engine",82],{en:"Change detection",ar:"رصد التغيّر",v:84},{en:"Spectral indices (NDVI, NDWI)",ar:"المؤشرات الطيفية (NDVI, NDWI)",v:90},["SAR (Sentinel-1)",65],{en:"DEM & terrain analysis",ar:"نماذج الارتفاع وتحليل السطح",v:80}],
-    tools:["Sentinel-2","Landsat 8/9","GEE","SNAP","ENVI"] },
-  { id:"ai", color:"var(--ok)", name:{en:"GeoAI & programming",ar:"GeoAI والبرمجة"},
-    items:[["Python (GeoPandas, Rasterio)",85],{en:"Machine learning (RF, XGBoost)",ar:"تعلّم الآلة (RF, XGBoost)",v:78},{en:"Deep learning (U-Net, YOLO)",ar:"التعلّم العميق (U-Net, YOLO)",v:70},["ArcPy",80],["SQL",76],{en:"LLMs for GIS workflows",ar:"النماذج اللغوية في أعمال GIS",v:68}],
-    tools:["Python","PyTorch","scikit-learn","ArcGIS GeoAI","Jupyter"] },
+  { id:"gis", color:"var(--accent)", name:{en:"GIS & Enterprise data",ar:"GIS وقواعد البيانات المؤسسية"},
+    items:[["ArcGIS Pro",92],{en:"Enterprise geodatabases",ar:"قواعد البيانات الجغرافية المؤسسية",v:88},{en:"Topology & Attribute Rules",ar:"Topology و Attribute Rules",v:90},["ArcGIS Data Reviewer",85],{en:"ArcGIS Online administration",ar:"إدارة ArcGIS Online",v:85},{en:"Ownership & parcel studies",ar:"دراسات الملكيات وقطع الأراضي",v:88}],
+    tools:["ArcGIS Pro","ArcGIS Online","Data Reviewer","Attribute Rules","ArcMap"] },
+  { id:"rs", color:"var(--water)", name:{en:"Survey, 3D & imagery",ar:"المساحة والبيانات ثلاثية الأبعاد والمرئيات"},
+    items:[{en:"Point cloud & LiDAR (LAS)",ar:"Point cloud و LiDAR (LAS)",v:80},{en:"Mobile mapping digitizing",ar:"الترقيم من المسح المتنقل",v:88},{en:"DEM / DSM / DTM",ar:"نماذج الارتفاع DEM / DSM / DTM",v:78},{en:"GPS & GPR data integration",ar:"دمج بيانات GPS و GPR",v:84},{en:"Satellite imagery (ERDAS)",ar:"المرئيات الفضائية (ERDAS)",v:72},["AutoCAD",80]],
+    tools:["LAS / Point cloud","ERDAS","AutoCAD","SAS Planet","Google Earth Pro"] },
+  { id:"ai", color:"var(--ok)", name:{en:"Automation & data",ar:"الأتمتة وتحليل البيانات"},
+    items:[{en:"FME data integration",ar:"دمج البيانات بـ FME",v:85},{en:"QA/QC automation",ar:"أتمتة ضبط الجودة",v:86},{en:"Python in ArcGIS (ArcPy)",ar:"Python داخل ArcGIS (ArcPy)",v:70},["Power BI",82],["Excel",88],{en:"Databases",ar:"قواعد البيانات",v:78}],
+    tools:["FME","ArcPy","ModelBuilder","Power BI","Excel"] },
   { id:"web", color:"var(--muted)", name:{en:"Web GIS & dashboards",ar:"Web GIS ولوحات المؤشرات"},
-    items:[["ArcGIS Dashboards",85],["Experience Builder",78],["Leaflet / MapLibre",70],["Power BI",72]],
-    tools:["Survey123","Field Maps","Leaflet","MapLibre","Power BI"] }
+    items:[["ArcGIS Dashboards",86],["Experience Builder",80],["ArcGIS StoryMaps",78],["Field Maps",80]],
+    tools:["Dashboards","Experience Builder","StoryMaps","Field Maps","Power BI"] }
 ];
 
 const PROJECTS = [
-  { cat:"rs", code:"NH-36-1", coords:"30.12°N 31.40°E", seed:3,
-    title:{en:"Urban sprawl around Greater Cairo, 2000–2024",ar:"الزحف العمراني حول القاهرة الكبرى 2000–2024"},
-    desc:{en:"Landsat time series classified with Random Forest in Google Earth Engine to measure built-up growth on agricultural land.",ar:"سلسلة مرئيات Landsat مصنّفة بخوارزمية Random Forest على Google Earth Engine لقياس التوسع العمراني على الأراضي الزراعية."},
-    result:{en:"Overall accuracy 91%, kappa 0.88",ar:"دقة كلية 91% ومعامل كابا 0.88"},
-    tags:["GEE","Landsat","Random Forest"] },
-  { cat:"ai", code:"NH-36-2", coords:"29.98°N 31.13°E", seed:7,
-    title:{en:"Building footprint extraction with deep learning",ar:"استخراج حدود المباني بالتعلّم العميق"},
-    desc:{en:"A U-Net model trained on high-resolution imagery to extract building footprints automatically for a cadastral update.",ar:"نموذج U-Net مدرَّب على مرئيات عالية الدقة لاستخراج حدود المباني تلقائياً لتحديث الخرائط المساحية."},
-    result:{en:"IoU 0.81 on held-out tiles",ar:"IoU بقيمة 0.81 على بيانات الاختبار"},
-    tags:["PyTorch","U-Net","ArcGIS Pro"] },
-  { cat:"gis", code:"NG-36-4", coords:"26.56°N 31.69°E", seed:11,
-    title:{en:"Flash flood risk map for a desert wadi",ar:"خريطة مخاطر السيول لوادٍ صحراوي"},
-    desc:{en:"Watershed delineation from a 30 m DEM combined with rainfall and land cover in a weighted overlay to rank risk zones.",ar:"تحديد أحواض التصريف من نموذج ارتفاع 30 م ودمجه مع الأمطار وغطاء الأرض بالتطابق الموزون لترتيب نطاقات الخطر."},
-    result:{en:"5 risk classes, 14 settlements flagged",ar:"5 فئات خطر و14 تجمعاً سكانياً معرّضاً"},
-    tags:["Hydrology","DEM","AHP"] },
-  { cat:"gis", code:"NH-36-5", coords:"31.20°N 29.92°E", seed:5,
-    title:{en:"Site suitability for new schools",ar:"اختيار أنسب المواقع لمدارس جديدة"},
-    desc:{en:"Multi-criteria analysis using population density, road access and existing service coverage to shortlist candidate parcels.",ar:"تحليل متعدد المعايير باستخدام الكثافة السكانية وسهولة الوصول وتغطية الخدمات الحالية لاختيار قطع أراضٍ مرشّحة."},
-    result:{en:"12 parcels shortlisted from 640",ar:"12 قطعة مرشّحة من بين 640"},
-    tags:["MCDA","Network Analyst","ArcGIS Pro"] },
-  { cat:"rs", code:"NH-35-6", coords:"30.60°N 32.27°E", seed:9,
-    title:{en:"Urban heat islands from Landsat thermal bands",ar:"الجزر الحرارية الحضرية من النطاقات الحرارية لـ Landsat"},
-    desc:{en:"Land surface temperature retrieved from Landsat 9 and compared with NDVI to find the hottest, least green neighbourhoods.",ar:"استخراج درجة حرارة سطح الأرض من Landsat 9 ومقارنتها بمؤشر NDVI لتحديد الأحياء الأعلى حرارة والأقل خضرة."},
-    result:{en:"Up to 7 °C difference between districts",ar:"فرق يصل إلى 7 درجات مئوية بين الأحياء"},
-    tags:["LST","NDVI","Python"] },
-  { cat:"web", code:"NH-36-7", coords:"30.05°N 31.24°E", seed:13,
-    title:{en:"Field survey dashboard for utilities",ar:"لوحة متابعة المسح الميداني للمرافق"},
-    desc:{en:"Survey123 forms feeding a live ArcGIS Dashboard so field teams and managers track asset inspections in one place.",ar:"نماذج Survey123 مرتبطة بلوحة ArcGIS Dashboards مباشرة لتتابع الفرق الميدانية والإدارة فحص الأصول في مكان واحد."},
-    result:{en:"3,200 assets inspected in 6 weeks",ar:"فحص 3,200 أصل خلال 6 أسابيع"},
-    tags:["Survey123","Dashboards","AGOL"] }
+  { cat:"gis", code:"SAR", coords:"Land Bridge route", seed:3,
+    title:{en:"Land Bridge ownership study",ar:"دراسة ملكيات مشروع الجسر البري"},
+    desc:{en:"Updated the base map and ran a property ownership study for land crossing the Land Bridge railway route, with spatial analysis to find the route that best fits business needs.",ar:"تحديث الخريطة الأساسية وإجراء دراسة ملكيات للأراضي المتقاطعة مع مسار الجسر البري، مع تحليل مكاني لاختيار المسار الأنسب لمتطلبات العمل."},
+    result:{en:"10,000+ parcels studied",ar:"أكثر من 10,000 قطعة أرض"},
+    tags:["Ownership", "Spatial analysis", "ArcGIS Pro"] },
+  { cat:"gis", code:"PIF", coords:"North Riyadh", seed:7,
+    title:{en:"North Pole",ar:"مشروع القطب الشمالي"},
+    desc:{en:"Analysed deed and property data and supported surveying operations across the North Riyadh sector.",ar:"تحليل بيانات الصكوك والملكيات ودعم أعمال المساحة في قطاع شمال الرياض."},
+    result:{en:"14,000+ parcels",ar:"أكثر من 14,000 قطعة أرض"},
+    tags:["Deeds", "Parcels", "QC"] },
+  { cat:"rs", code:"PIF", coords:"18 sites · KSA", seed:11,
+    title:{en:"Anchor",ar:"مشروع Anchor"},
+    desc:{en:"Land and ownership surveys for maritime, dry port and logistics zone sites across the Kingdom.",ar:"مسح الأراضي والملكيات لمواقع بحرية وموانئ جافة ومناطق لوجستية في أنحاء المملكة."},
+    result:{en:"18 sites surveyed",ar:"مسح 18 موقعاً"},
+    tags:["Survey", "Ownership", "Geodatabase"] },
+  { cat:"ai", code:"PIF", coords:"Jeddah", seed:5,
+    title:{en:"Prince Mohammed bin Salman Bay",ar:"خليج الأمير محمد بن سلمان"},
+    desc:{en:"Converted CAD drawings into a project-specific geodatabase covering every visible feature and infrastructure asset.",ar:"تحويل ملفات CAD إلى قاعدة بيانات خاصة بالمشروع تشمل كل المعالم الظاهرة والبنية التحتية."},
+    result:{en:"8 km corridor",ar:"ممر بطول 8 كم"},
+    tags:["CAD to GIS", "FME", "Geodatabase"] },
+  { cat:"rs", code:"MEWA", coords:"170 sites · KSA", seed:9,
+    title:{en:"Water Fields survey",ar:"مسح حقول المياه"},
+    desc:{en:"Surveyed water fields across the Kingdom, loaded the results into the database and produced cartographic outputs and survey decisions.",ar:"مسح حقول المياه في أنحاء المملكة وإدخالها في قاعدة البيانات وإنتاج المخرجات الكارتوجرافية والقرارات المساحية."},
+    result:{en:"170 water fields",ar:"170 حقل مياه"},
+    tags:["Survey", "Cartography", "ArcGIS Pro"] },
+  { cat:"rs", code:"RCRC", coords:"Riyadh districts", seed:13,
+    title:{en:"Green Riyadh",ar:"الرياض الخضراء"},
+    desc:{en:"Integrated survey and GPR infrastructure data for several Riyadh districts into the central database for Parsons.",ar:"دمج بيانات المساحة والبنية التحتية من GPR لعدة أحياء بالرياض في قاعدة البيانات المركزية لصالح شركة Parsons."},
+    result:{en:"Survey + GPR in one database",ar:"المساحة و GPR في قاعدة واحدة"},
+    tags:["GPR", "Data integration", "Enterprise GIS"] },
+  { cat:"web", code:"MODON", coords:"42 cities · KSA", seed:4,
+    title:{en:"MODON GIS data & geo-dashboards",ar:"بيانات GIS ولوحات مؤشرات مدن"},
+    desc:{en:"Mapped every real-world feature from mobile mapping imagery and turned 2D data into 3D models for BIM integration.",ar:"رسم كل المعالم من صور المسح المتنقل وتحويل البيانات ثنائية الأبعاد إلى نماذج ثلاثية الأبعاد للدمج مع BIM."},
+    result:{en:"42 industrial cities",ar:"42 مدينة صناعية"},
+    tags:["Mobile mapping", "3D / BIM", "Dashboards"] },
+  { cat:"gis", code:"SEC", coords:"Eastern Region", seed:8,
+    title:{en:"Eastern Region electricity network",ar:"شبكة الكهرباء بالمنطقة الشرقية"},
+    desc:{en:"As-built survey of electrical equipment and connected medium- and low-voltage networks, with data prepared, updated and validated to project standards.",ar:"مسح As-built للمعدات الكهربائية وشبكات الجهد المتوسط والمنخفض، مع تجهيز البيانات وتحديثها والتحقق منها وفق معايير المشروع."},
+    result:{en:"MV + LV networks validated",ar:"تحقق من شبكات الجهد المتوسط والمنخفض"},
+    tags:["As-built", "Utility network", "QC"] },
+  { cat:"gis", code:"Riyadh Municipality", coords:"Riyadh region", seed:6,
+    title:{en:"Riyadh region geospatial database",ar:"قاعدة البيانات الجيومكانية لمنطقة الرياض"},
+    desc:{en:"Built base maps for the villages with the highest growth and urban expansion potential across Riyadh municipalities.",ar:"إعداد خرائط أساسية للقرى الأعلى نمواً وقابلية للتوسع العمراني في بلديات منطقة الرياض."},
+    result:{en:"500 villages mapped",ar:"خرائط لـ 500 قرية"},
+    tags:["Base map", "ArcMap", "ArcGIS Pro"] }
 ];
 
+/* Tools: put each file in Google Drive with access "Restricted" and paste its share link in url.
+   Visitors then get Drive's own "Request access" page, you approve from the email, and they can download.
+   access:"free" = link set to "Anyone with the link". */
+const TOOLS = [
+  { icon:".pyt", access:"request", url:"https://drive.google.com/", works:"ArcGIS Pro 3.x", version:"1.4", updated:"2026-09",
+    name:{en:"GEOSA Data Validator",ar:"مدقق بيانات الهيئة الجيومكانية"},
+    desc:{en:"Python toolbox that checks feature classes against the Saudi Geospatial Authority schema: field names, domains, coordinate system and topology, then exports an error report.",ar:"صندوق أدوات Python يفحص الطبقات مقابل نموذج بيانات الهيئة العامة للمساحة والمعلومات الجيومكانية: أسماء الحقول والنطاقات ونظام الإحداثيات والطوبولوجيا، ثم يصدّر تقرير بالأخطاء."} },
+  { icon:"QC", access:"request", url:"https://drive.google.com/", works:"ArcGIS Pro 3.x", version:"2.0", updated:"2026-07",
+    name:{en:"Topology QC Toolkit",ar:"أدوات فحص الطوبولوجيا"},
+    desc:{en:"Batch topology rules for parcels and utility networks with automatic fixes for gaps, overlaps and dangles.",ar:"قواعد طوبولوجيا دفعة واحدة لقطع الأراضي وشبكات المرافق مع إصلاح تلقائي للفراغات والتداخلات والخطوط المعلّقة."} },
+  { icon:".py", access:"free", url:"https://github.com/eid-shaban", works:"ArcPy · Python 3", version:"1.1", updated:"2026-05",
+    name:{en:"Batch Layout Exporter",ar:"مصدّر اللوحات دفعة واحدة"},
+    desc:{en:"Exports every layout in a project, or a map series, to PDF and PNG with consistent names and resolution.",ar:"يصدّر كل لوحات المشروع أو سلسلة الخرائط إلى PDF و PNG بأسماء ودقة موحّدة."} },
+  { icon:"WEB", access:"request", url:"https://drive.google.com/", works:"ArcGIS Enterprise 11", version:"1.0", updated:"2026-03",
+    name:{en:"Property Ownership Report App",ar:"تطبيق تقارير الملكيات العقارية"},
+    desc:{en:"Web app template that searches a parcel and generates an ownership report with map, owners and area figures.",ar:"قالب تطبيق ويب للبحث عن قطعة أرض وإصدار تقرير ملكية فيه الخريطة والملاك والمساحات."} }
+];
+
+const COURSES = ["Data QC with ArcGIS: Automating Validation","Automating processes in ArcGIS Pro","Integrate Spatial Data by FME","Fundamentals and Applications of ArcGIS Online","How to use Python in ArcGIS","Introduction to Databases","Advanced Survey Applications of LiDAR and 3D Point Cloud","Data Analysis using Excel and Power BI","Business English"];
+
 const EXPERIENCE = [
-  { when:"2023 — now", title:{en:"GIS Specialist",ar:"أخصائي نظم معلومات جغرافية"}, org:{en:"Company name (placeholder)",ar:"اسم الجهة (مثال)"},
-    desc:{en:"Lead spatial analysis and remote sensing work, and introduced machine-learning classification into the mapping workflow.",ar:"قيادة أعمال التحليل المكاني والاستشعار عن بعد، وإدخال التصنيف بتعلّم الآلة في مسار إنتاج الخرائط."} },
-  { when:"2020 — 2023", title:{en:"GIS Analyst",ar:"محلل نظم معلومات جغرافية"}, org:{en:"Organisation name (placeholder)",ar:"اسم المؤسسة (مثال)"},
-    desc:{en:"Built and maintained enterprise geodatabases, produced thematic maps, and automated recurring tasks with ArcPy.",ar:"بناء قواعد بيانات جغرافية مؤسسية وصيانتها، وإنتاج خرائط موضوعية، وأتمتة المهام المتكررة باستخدام ArcPy."} },
-  { when:"2019 — 2020", title:{en:"GIS Technician (internship)",ar:"فني GIS (تدريب)"}, org:{en:"Organisation name (placeholder)",ar:"اسم المؤسسة (مثال)"},
-    desc:{en:"Digitised base maps, cleaned field survey data and prepared layouts for planning reports.",ar:"ترقيم الخرائط الأساسية، وتنقية بيانات المسح الميداني، وتجهيز اللوحات لتقارير التخطيط."} }
+  { when:"Jul 2024 — now", title:{en:"GIS Data QC Specialist",ar:"أخصائي ضبط جودة بيانات GIS"}, org:{en:"Alqotr Engineering Consulting · Riyadh",ar:"شركة القطر للاستشارات الهندسية · الرياض"},
+    desc:{en:"Design and maintain enterprise geodatabases, administer ArcGIS Online, and build custom tools that automate QA/QC. I supervise the migration of point cloud, GPS and GPR survey data into GIS, validate it with Topology and Attribute Rules, build Power BI and ArcGIS dashboards, and coordinate with municipalities, the Ministry of Justice, the Ports Authority, SAR and PIF.",ar:"تصميم وصيانة قواعد البيانات الجغرافية المؤسسية، وإدارة ArcGIS Online، وتطوير أدوات لأتمتة ضبط الجودة. أشرف على نقل بيانات Point cloud و GPS و GPR إلى GIS، وأتحقق منها بـ Topology و Attribute Rules، وأبني لوحات Power BI و ArcGIS، وأنسّق مع البلديات ووزارة العدل والهيئة العامة للموانئ وسار وصندوق الاستثمارات العامة."} },
+  { when:"Sep 2023 — Jun 2024", title:{en:"GIS Data QC Specialist",ar:"أخصائي ضبط جودة بيانات GIS"}, org:{en:"Quality Standard Company · Egypt",ar:"شركة Quality Standard · مصر"},
+    desc:{en:"Led a team of 10, planned and allocated the work, reviewed and validated all deliverables, and closed out data to client standards. Drew as-built electricity networks from survey data and satellite imagery.",ar:"قيادة فريق من 10 أفراد وتخطيط وتوزيع المهام، ومراجعة كل المخرجات والتحقق منها، وتسليم البيانات وفق معايير العميل. رسم شبكات الكهرباء As-built من بيانات المساحة وصور الأقمار الصناعية."} },
+  { when:"Oct 2022 — Sep 2023", title:{en:"GIS Data QC Specialist · Mobile Mapping Specialist",ar:"أخصائي ضبط جودة بيانات GIS · أخصائي المسح المتنقل"}, org:{en:"Geo PRO · Egypt",ar:"Geo PRO · مصر"},
+    desc:{en:"Extracted orthophotos and DEM/DSM/DTM surfaces from LAS files, digitized 2D maps from mobile mapping point clouds, converted CAD to GIS with FME, and ran QC with Data Reviewer and Topology.",ar:"استخراج الأورثوفوتو ونماذج DEM/DSM/DTM من ملفات LAS، وترقيم الخرائط من Point cloud المسح المتنقل، وتحويل CAD إلى GIS باستخدام FME، وضبط الجودة بـ Data Reviewer و Topology."} },
+  { when:"Jun 2022 — Sep 2023", title:{en:"GIS Specialist",ar:"أخصائي نظم معلومات جغرافية"}, org:{en:"CAD&GIS · Egypt",ar:"CAD&GIS · مصر"},
+    desc:{en:"Processed satellite imagery in ERDAS and ArcMap, managed coordinate points received from Riyadh municipalities, digitized base maps and plans, updated Makkah's roads and mapped the Hajj paths for Hajj 2021 and 2022.",ar:"معالجة المرئيات الفضائية في ERDAS و ArcMap، وإدارة نقاط الإحداثيات الواردة من بلديات الرياض، وترقيم الخرائط الأساسية والمخططات، وتحديث طرق مكة المكرمة ورسم مسارات الحجاج في موسمي حج 2021 و 2022."} }
 ];
 
 const ICONS = {
@@ -549,11 +682,9 @@ const ICONS = {
 };
 const CHANNELS = [
   { icon:"linkedin", name:"LinkedIn", handle:"linkedin.com/in/your-handle", url:"https://www.linkedin.com/", note:{en:"Career updates and posts",ar:"آخر أخباري المهنية"} },
-  { icon:"github", name:"GitHub", handle:"github.com/your-handle", url:"https://github.com/", note:{en:"Python and GEE scripts",ar:"أكواد Python و GEE"} },
-  { icon:"arcgis", name:"ArcGIS Online", handle:"your-org.maps.arcgis.com", url:"https://www.arcgis.com/", note:{en:"Live web maps and apps",ar:"خرائط وتطبيقات ويب مباشرة"} },
-  { icon:"medium", name:"Medium", handle:"medium.com/@your-handle", url:"https://medium.com/", note:{en:"Articles on GeoAI",ar:"مقالات عن GeoAI"} },
-  { icon:"whatsapp", name:"WhatsApp", handle:"+20 1X XXXX XXXX", url:"https://wa.me/", note:{en:"Quick questions",ar:"للأسئلة السريعة"} },
-  { icon:"mail", name:"Email", handle:"eid@example.com", url:"#contact", note:{en:"Project enquiries",ar:"للاستفسار عن المشاريع"} }
+  { icon:"github", name:"GitHub", handle:"github.com/eid-shaban", url:"https://github.com/eid-shaban", note:{en:"Scripts and this site's code",ar:"الأكواد وكود الموقع ده"} },
+  { icon:"whatsapp", name:"WhatsApp", handle:"+966 56 641 2500", url:"https://wa.me/966566412500", note:{en:"Quick questions",ar:"للأسئلة السريعة"} },
+  { icon:"mail", name:"Email", handle:"eidshaban231@gmail.com", url:"#contact", note:{en:"Job offers and project enquiries",ar:"لعروض العمل والاستفسار عن المشاريع"} }
 ];
 
 /* ================= App ================= */
@@ -571,7 +702,7 @@ function applyLang(){
   document.querySelectorAll("[data-i18n]").forEach(el => { const k = el.dataset.i18n; if(d[k] != null) el.textContent = d[k]; });
   document.querySelectorAll("[data-i18n-html]").forEach(el => { const k = el.dataset.i18nHtml; if(d[k] != null) el.innerHTML = d[k]; });
   $("#langToggle").textContent = lang === "ar" ? "EN" : "عربي";
-  renderSkills(); renderFilters(); renderProjects(); renderTimeline(); renderChannels();
+  renderSkills(); renderFilters(); renderProjects(); renderTimeline(); renderTools(); renderChannels();
   restartRoles();
 }
 
@@ -610,7 +741,7 @@ function renderProjects(){
     <article class="sheet tilt pop" style="--k:${i}">
       <canvas data-seed="${p.seed}" data-cat="${p.cat}" aria-hidden="true"></canvas>
       <div class="sheet-body">
-        <div class="sheet-meta mono"><span>SHEET ${p.code}</span><span>${p.coords}</span></div>
+        <div class="sheet-meta mono"><span>${p.code}</span><span>${p.coords}</span></div>
         <h3>${tx(p.title)}</h3>
         <p>${tx(p.desc)}</p>
         <span class="result">${tx(p.result)}</span>
@@ -621,7 +752,28 @@ function renderProjects(){
   bindFx();
 }
 
+function renderTools(){
+  const d = T[lang];
+  $("#toolsGrid").innerHTML = TOOLS.map(t => {
+    const req = t.access === "request";
+    return `<article class="tool">
+      <div class="tool-icon" aria-hidden="true">${t.icon}</div>
+      <div class="tool-body">
+        <div class="tool-head"><h3>${tx(t.name)}</h3><span class="access ${req?"req":"free"}">${req?d.onRequest:d.freeLbl}</span></div>
+        <p>${tx(t.desc)}</p>
+        <div class="tool-meta"><span>${d.lblWorks}: <b>${t.works}</b></span><span>${d.lblVer}: <b class="mono">${t.version}</b></span><span>${d.lblUpd}: <b class="mono">${t.updated}</b></span></div>
+        <div class="tool-actions">${req
+          ? `<button class="btn btn-sm btn-primary" type="button" data-req="${TOOLS.indexOf(t)}">${d.reqBtn}</button>`
+          : (/^https:\/\/(drive\.google\.com|github\.com\/eid-shaban)\/?$/.test(t.url)
+              ? `<span class="btn btn-sm" aria-disabled="true" style="opacity:.55;cursor:not-allowed">${d.soonBtn}</span>`
+              : `<a class="btn btn-sm" href="${t.url}" target="_blank" rel="noopener">${d.freeBtn} ↗</a>`)}</div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
 function renderTimeline(){
+  $("#courses").innerHTML = COURSES.map(c => `<span class="chip">${c}</span>`).join("");
   $("#timeline").innerHTML = EXPERIENCE.map(e => `
     <div class="tl"><div class="when mono">${e.when}</div><div class="rail"></div>
       <div class="what"><h3>${tx(e.title)}</h3><div class="org">${tx(e.org)}</div><p>${tx(e.desc)}</p></div></div>`).join("");
@@ -694,7 +846,7 @@ const LEVELS = Array.from({length:22}, (_,i) => -0.5 + i*0.075);
 const topo = $("#topo"), tctx = topo.getContext("2d"), heroF = field(42);
 let tw=0, th=0;
 function sizeTopo(){
-  const dpr = Math.min(devicePixelRatio||1, 2), r = topo.getBoundingClientRect();
+  const dpr = Math.min(devicePixelRatio||1, 1.25), r = topo.getBoundingClientRect();
   tw = r.width; th = r.height; topo.width = tw*dpr; topo.height = th*dpr; tctx.setTransform(dpr,0,0,dpr,0,0);
 }
 function drawTopo(t){
@@ -705,16 +857,18 @@ sizeTopo(); drawTopo(0);
 addEventListener("resize", () => { sizeTopo(); drawTopo(performance.now()); });
 if(!matchMedia("(prefers-reduced-motion: reduce)").matches){
   let last = 0;
-  const loop = t => { if(t - last > 66){ drawTopo(t); last = t; } requestAnimationFrame(loop); };
+  let heroVisible = true;
+  if("IntersectionObserver" in window) new IntersectionObserver(es => { heroVisible = es[0].isIntersecting; }).observe(topo);
+  const loop = t => { if(heroVisible && !document.hidden && t - last > 80){ drawTopo(t); last = t; } requestAnimationFrame(loop); };
   requestAnimationFrame(loop);
 }
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { drawTopo(performance.now()); document.querySelectorAll(".sheet canvas").forEach(drawSheet); });
 
-/* Cursor coordinates over the hero, mapped onto a Cairo-centred extent */
+/* Cursor coordinates over the hero, mapped onto a Riyadh-centred extent */
 const hero = $(".hero");
 hero.addEventListener("pointermove", e => {
   const r = hero.getBoundingClientRect();
-  const lon = 31.05 + (e.clientX - r.left)/r.width*0.4, lat = 30.25 - (e.clientY - r.top)/r.height*0.4;
+  const lon = 46.48 + (e.clientX - r.left)/r.width*0.4, lat = 24.91 - (e.clientY - r.top)/r.height*0.4;
   $("#cursorCoords").textContent = `LAT ${lat.toFixed(4)} · LON ${lon.toFixed(4)}`;
 });
 
@@ -747,6 +901,43 @@ $("#copyEmail").addEventListener("click", () => {
   if(navigator.clipboard?.writeText) navigator.clipboard.writeText(email).then(()=>toast(T[lang].copied), fallback); else fallback();
 });
 
+
+/* ================= Download requests ================= */
+/* Requests are emailed to Eid through Web3Forms (free). Paste the access key from web3forms.com here. */
+const REQUEST_KEY = "";
+const dlg = $("#reqDialog"), form = $("#reqForm"), msg = $("#reqMsg");
+let reqToolIdx = 0;
+const showMsg = (text, kind) => { msg.textContent = text; msg.className = "req-msg " + kind; msg.hidden = false; };
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-req]"); if(!b) return;
+  reqToolIdx = +b.dataset.req;
+  $("#reqTool").textContent = tx(TOOLS[reqToolIdx].name) + " · v" + TOOLS[reqToolIdx].version;
+  msg.hidden = true; $("#reqSend").disabled = false; $("#reqSend").textContent = T[lang].rqSend;
+  if(dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
+  setTimeout(() => $("#rqName").focus(), 50);
+});
+$("#reqCancel").addEventListener("click", () => dlg.close ? dlg.close() : dlg.removeAttribute("open"));
+dlg.addEventListener("click", e => { if(e.target === dlg) dlg.close(); });
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const d = T[lang], f = new FormData(form);
+  if(f.get("botcheck")) return;
+  const email = (f.get("email") || "").trim();
+  if(!f.get("name").trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || !f.get("purpose").trim()){ showMsg(d.rqMissing, "err"); return; }
+  if(!REQUEST_KEY){ showMsg(d.rqNoKey, "err"); return; }
+  const t = TOOLS[reqToolIdx], btn = $("#reqSend");
+  btn.disabled = true; btn.textContent = d.rqSending;
+  try{
+    const r = await fetch("https://api.web3forms.com/submit", { method:"POST", headers:{ "Content-Type":"application/json", Accept:"application/json" },
+      body: JSON.stringify({ access_key: REQUEST_KEY, subject: `Tool request: ${t.name.en}`, from_name: "Portfolio · Tool requests",
+        tool: `${t.name.en} (v${t.version})`, drive_link: t.url, name: f.get("name"), email, organisation: f.get("organisation"),
+        phone: f.get("phone"), purpose: f.get("purpose"), language: lang }) });
+    const j = await r.json().catch(() => ({}));
+    if(!r.ok || j.success === false) throw new Error(j.message || r.status);
+    showMsg(d.rqOk, "ok"); form.reset(); btn.textContent = d.rqSend;
+  }catch(err){ showMsg(d.rqErr, "err"); btn.disabled = false; btn.textContent = d.rqSend; }
+});
+
 $("#langToggle").addEventListener("click", () => {
   lang = lang === "en" ? "ar" : "en";
   try{ localStorage.setItem("lang", lang); }catch(e){}
@@ -756,7 +947,7 @@ $("#year").textContent = new Date().getFullYear();
 
 /* ================= Motion ================= */
 const REDUCE = matchMedia("(prefers-reduced-motion: reduce)").matches;
-const MARQ = ["ArcGIS Pro","QGIS","Google Earth Engine","Python","Sentinel-2","PostGIS","PyTorch","Remote Sensing","GeoAI","Spatial Statistics","Landsat","Survey123"];
+const MARQ = ["ArcGIS Pro","ArcGIS Online","FME","Topology","Attribute Rules","Data Reviewer","Point Cloud","GPR","Power BI","Experience Builder","Field Maps","AutoCAD"];
 $("#marquee").innerHTML = [...MARQ, ...MARQ].map(t => `<span>${t}</span>`).join("");
 
 function inView(el){ const r = el.getBoundingClientRect(); return r.top < innerHeight && r.bottom > 0; }
@@ -784,7 +975,7 @@ function armCounts(root){ if(REDUCE || !io) return; root.querySelectorAll("[data
 /* Scroll reveals: only elements below the fold start hidden, so the first screen is complete at rest */
 function armReveals(){
   if(REDUCE || !io) return;
-  const groups = [".sec-head", ".about > *", ".facts div", ".layers > *", ".sheets", ".tl", ".contact > div", ".channel", ".stats div", ".sample-note"];
+  const groups = [".sec-head", ".about > *", ".facts div", ".layers > *", ".sheets", ".tl", ".tool", ".flow > div", ".contact > div", ".channel", ".stats div", ".sample-note"];
   groups.forEach(sel => document.querySelectorAll(sel).forEach((el, i) => {
     if(el.getBoundingClientRect().top < innerHeight) return;
     el.classList.add("reveal"); el.style.setProperty("--d", (i % 6) * 90 + "ms"); io.observe(el);
@@ -842,7 +1033,7 @@ addEventListener("scroll", onScroll, {passive:true});
 let lenis = null;
 if(!REDUCE && window.Lenis){
   try{
-    lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+    lenis = new Lenis({ lerp: 0.16, wheelMultiplier: 1.35, smoothWheel: true });
     lenis.on("scroll", onScroll);
     const raf = t => { lenis.raf(t); requestAnimationFrame(raf); }; requestAnimationFrame(raf);
     document.addEventListener("click", e => {
