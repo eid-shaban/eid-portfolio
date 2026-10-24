@@ -456,7 +456,6 @@ html[dir="rtl"] .marquee-track{animation-name:marqR}
         <div><span class="n">3</span><div><b data-i18n="flow3">Download</b><span data-i18n="flow3d">You get an email with access to the file.</span></div></div>
       </div>
       <div class="tools-grid" id="toolsGrid"></div>
-      <p class="sample-note" data-i18n="toolsNote">Sample tools shown as placeholders. Replace them with your real tools.</p>
     </div>
   </section>
 
@@ -645,18 +644,15 @@ const PROJECTS = [
    Visitors then get Drive's own "Request access" page, you approve from the email, and they can download.
    access:"free" = link set to "Anyone with the link". */
 const TOOLS = [
-  { icon:".pyt", access:"request", url:"https://drive.google.com/", works:"ArcGIS Pro 3.x", version:"1.4", updated:"2026-09",
-    name:{en:"GEOSA Data Validator",ar:"مدقق بيانات الهيئة الجيومكانية"},
-    desc:{en:"Python toolbox that checks feature classes against the Saudi Geospatial Authority schema: field names, domains, coordinate system and topology, then exports an error report.",ar:"صندوق أدوات Python يفحص الطبقات مقابل نموذج بيانات الهيئة العامة للمساحة والمعلومات الجيومكانية: أسماء الحقول والنطاقات ونظام الإحداثيات والطوبولوجيا، ثم يصدّر تقرير بالأخطاء."} },
-  { icon:"QC", access:"request", url:"https://drive.google.com/", works:"ArcGIS Pro 3.x", version:"2.0", updated:"2026-07",
-    name:{en:"Topology QC Toolkit",ar:"أدوات فحص الطوبولوجيا"},
-    desc:{en:"Batch topology rules for parcels and utility networks with automatic fixes for gaps, overlaps and dangles.",ar:"قواعد طوبولوجيا دفعة واحدة لقطع الأراضي وشبكات المرافق مع إصلاح تلقائي للفراغات والتداخلات والخطوط المعلّقة."} },
-  { icon:".py", access:"free", url:"https://github.com/eid-shaban", works:"ArcPy · Python 3", version:"1.1", updated:"2026-05",
-    name:{en:"Batch Layout Exporter",ar:"مصدّر اللوحات دفعة واحدة"},
-    desc:{en:"Exports every layout in a project, or a map series, to PDF and PNG with consistent names and resolution.",ar:"يصدّر كل لوحات المشروع أو سلسلة الخرائط إلى PDF و PNG بأسماء ودقة موحّدة."} },
-  { icon:"WEB", access:"request", url:"https://drive.google.com/", works:"ArcGIS Enterprise 11", version:"1.0", updated:"2026-03",
-    name:{en:"Property Ownership Report App",ar:"تطبيق تقارير الملكيات العقارية"},
-    desc:{en:"Web app template that searches a parcel and generates an ownership report with map, owners and area figures.",ar:"قالب تطبيق ويب للبحث عن قطعة أرض وإصدار تقرير ملكية فيه الخريطة والملاك والمساحات."} }
+  { icon:".pyt", access:"request", url:"https://drive.google.com/file/d/18-csN4QzIYu6dggT5jUgJ63lPT3902x2/view", works:"ArcGIS Pro 3.x · ArcGIS Online", version:"1.0", updated:"2026-10",
+    name:{en:"Update ArcGIS Online Layer",ar:"تحديث طبقة ArcGIS Online"},
+    desc:{en:"Compares a geodatabase layer with a hosted ArcGIS Online layer (geometry, Z, spatial reference, fields, types and lengths). If they match, it backs up, truncates and appends the new data, so the Item ID stays the same and dashboards keep working. If not, it stops and reports the differences in a colour-coded Excel file.",ar:"يقارن طبقة من قاعدة البيانات الجغرافية بطبقة منشورة على ArcGIS Online (نوع الشكل و Z ونظام الإحداثيات والحقول وأنواعها وأطوالها). لو متطابقين ياخد نسخة احتياطية ويفرّغ الطبقة ويضيف البيانات الجديدة، فيفضل الـ Item ID زي ما هو واللوحات شغالة. ولو فيه اختلاف يوقف ويطلع تقرير Excel ملوّن بالفروقات."} },
+  { icon:".pyt", access:"request", url:"https://drive.google.com/file/d/1c5Fa968E-IpaT8pqEvAM2zkbTc8Mb4NW/view", works:"ArcGIS Pro 3.x", version:"0.6", updated:"2026-10",
+    name:{en:"Parcel Boundary Description",ar:"توصيف حدود قطع الأراضي"},
+    desc:{en:"Splits each parcel's outline into sides, classifies them north, east, south and west by true north, and finds what lies on each side: a neighbouring parcel or a street with its name and width. Writes boundary text and lengths to 8 fields on a copy of the layer, plus boundary lines, an overlaps report in Excel and flags for near-diagonal sides.",ar:"يقسّم حدود كل قطعة لأضلاع ويصنّفها شمال وشرق وجنوب وغرب حسب الشمال الحقيقي، ويحدد اللي على كل ضلع: قطعة مجاورة أو شارع باسمه وعرضه. يكتب وصف الحدود وأطوالها في 8 حقول على نسخة من الطبقة، ويطلع خطوط الحدود وتقرير Excel بالتداخلات وتنبيه للأضلاع القريبة من القطري."} },
+  { icon:".pyt", access:"request", url:"https://drive.google.com/file/d/1q8yeTR_FtC4YD8lnNUuJvKKAagxdcorj/view", works:"ArcGIS Pro 3.x", version:"1.0", updated:"2026-10",
+    name:{en:"Layer Changes",ar:"رصد تغييرات الطبقة"},
+    desc:{en:"Compares two versions of a layer and reports what changed between them: added, deleted and modified features.",ar:"يقارن نسختين من نفس الطبقة ويطلع تقرير باللي اتغيّر بينهم: العناصر المضافة والمحذوفة والمعدّلة."} }
 ];
 
 const COURSES = ["Data QC with ArcGIS: Automating Validation","Automating processes in ArcGIS Pro","Integrate Spatial Data by FME","Fundamentals and Applications of ArcGIS Online","How to use Python in ArcGIS","Introduction to Databases","Advanced Survey Applications of LiDAR and 3D Point Cloud","Data Analysis using Excel and Power BI","Business English"];
